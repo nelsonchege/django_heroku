@@ -9,6 +9,6 @@ class Userprofileav(generics.ListCreateAPIView):
     queryset = Userprofile.objects.all()
     serializer_class = UserprofileSerializer
 
-class CakeVariety(generics.ListCreateAPIView):
+class CakeVariety(generics.ListAPIView):
     queryset = Trial.objects.all()
     serializer_class = TrialSerializer
